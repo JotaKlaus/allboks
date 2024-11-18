@@ -12,12 +12,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-  
-  ]  steps:
+    steps:
     - uses: actions/checkout@v4
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 22.
-    - run: npm installc
+    - run: npm install
     - run: npm test
